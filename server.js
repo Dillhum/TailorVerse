@@ -52,7 +52,9 @@ app.post("/create-payment-intent", async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
-
+app.get("/", (req, res) => {
+  res.send("TailorVerse server is running 🚀");
+});
 // 🚀 Server start
 app.listen(5000, () => {
   console.log("🔥 NEW SERVER RUNNING ON 5000");
