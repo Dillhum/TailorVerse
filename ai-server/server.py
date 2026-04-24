@@ -6,6 +6,10 @@ import math
 
 app = FastAPI()
 
+@app.get("/")
+def home():
+    return {"message": "AI server is running"}
+
 mp_pose = mp.solutions.pose
 pose = mp_pose.Pose(
     static_image_mode=True,
