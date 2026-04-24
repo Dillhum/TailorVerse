@@ -1,0 +1,16 @@
+# Node
+node_modules/
+
+# Python
+venv/
+ai-server/venv/
+
+# Cache
+__pycache__/
+*.pyc
+
+# Expo
+.expo/
+
+# Logs
+*.log
